@@ -1,9 +1,7 @@
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { OrbitControls } from 'three/examples/jsm/Addons.js';
+import * as THREE from "https://unpkg.com/three@0.164.1/build/three.module.js";
+import { GLTFLoader } from "https://unpkg.com/three@0.164.1/examples/jsm/loaders/GLTFLoader.js";
+import { OrbitControls } from "https://unpkg.com/three@0.164.1/examples/jsm/controls/OrbitControls.js";
 import * as app from './app/app.js';
-import { initPhy, stepPhysics, createPhysicsRope, ropeReady, dragFirstNode } from "./app/physics.js";
-
 
 
 // Scene, Camera, Renderer
@@ -148,3 +146,4 @@ scene.add(glowSprite);
 window.addEventListener('mousemove', onMouseMove);
 
 animate();
+
