@@ -49,7 +49,7 @@ let ropeMesh, ropeNodes = [];
 function load3DModel() {
   const loader = new GLTFLoader();
   loader.load(
-    '/Rope.glb',  // path to your model
+    './assets/Rope.glb',  // path to your model
     (gltf) => {
       const model = gltf.scene;
       scene.add(model);
@@ -146,4 +146,5 @@ scene.add(glowSprite);
 window.addEventListener('mousemove', onMouseMove);
 
 animate();
+
 
